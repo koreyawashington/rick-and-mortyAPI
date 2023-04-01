@@ -24,7 +24,7 @@ const Cards = ({results}) => {
                             </div>         
                     </div>
                 </div>
-               <div className={`styling.badge`}"position-absolute badge bg-danger">{status}</div>
+               <div className={`${styling.badge} position-absolute badge bg-danger`}>{status}</div>
             </div>
             );
         });
