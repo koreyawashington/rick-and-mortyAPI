@@ -10,7 +10,7 @@ import React, {useState, useEffect} from "react";
 //Importing components
 import Filters from "./components/Filters/Filters";
 import Cards from "./components/Cards/Cards";
-// import Search from "./components/Search/Search"
+import Search from "./components/Search/Search"
 import Pagination from "./components/Pagination/Pagination"
 // import NavBar from "./components/NavBar/NavBar"
 
@@ -59,6 +59,8 @@ useEffect(() => {
       {/* This is the styling for the banner text at the top of the webpage */}
       <h1 className="text-center ubuntu my-4">Rick & Morty <span className="text-primary">WiKi</span></h1>
 
+      <Search />
+
       <div className="container">
         <div className="row">
           {/* The 'Filters' div will consist of 3 columns on the page */}
@@ -74,7 +76,7 @@ useEffect(() => {
           </div>
         </div>
         </div>  
-      <Pagination  setPageNumber={ setPageNumber } />
+      <Pagination pageNumber={pageNumber} setPageNumber={ setPageNumber } />
     </div>
   );
 }

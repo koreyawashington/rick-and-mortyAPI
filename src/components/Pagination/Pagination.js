@@ -4,7 +4,7 @@ import React from 'react'
 
 //The pagination page will style the layout and control the buttons that will function to change the page
 // setPageNumber is ,the function from App.js, used to change the pageNumber and controls how to make the data change when switching pages 
-const Pagination = ({ setPageNumber }) => {
+const Pagination = ({ pageNumber,setPageNumber }) => {
     
     let next = ()=>{
        
@@ -16,6 +16,8 @@ const Pagination = ({ setPageNumber }) => {
 
     let prev = ()=>{
 
+        //for the previous button if the page number is set to 1 we are going to return it and stop the statement from running any further because that is our default page which is also the starting page, so that is why I we are checking to see if pageNumber is equal to 1
+        if(pageNumber === 1) return;
         //inside of this arrow function the x represents  
         setPageNumber(( x ) => x - 1 )
     }
