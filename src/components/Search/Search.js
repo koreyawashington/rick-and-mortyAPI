@@ -6,10 +6,10 @@ import styling from "./Search.module.scss";
 
 const Search = () => {
   return (
-    <form className="">
+    <form className="d-flex justify-content-right gap-4 mb-5">
 {/* The input is where the web user will be able to use the search bar to search throughout the website */}
       <input 
-      placeholder=' ' 
+      placeholder='Wubba Lubba Dub Dub ' 
       type="text" 
       className={styling.input}
       />
