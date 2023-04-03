@@ -1,14 +1,18 @@
 
 
 import React from 'react'
-import styling from "./Search.module.scss"
+import styles from "./Search.module.scss"
 
 
 const Search = () => {
   return (
     <form className="">
 
-      <input placeholder='Searching throughout webpage' type="text" className=''/>
+      <input 
+      placeholder=' ' 
+      type="text" 
+      className="{styles.input}"
+      />
       <button className="btn btn-primary">Search</button>
     
     </form>

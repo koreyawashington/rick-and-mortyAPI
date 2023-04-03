@@ -59,7 +59,7 @@ useEffect(() => {
       {/* This is the styling for the banner text at the top of the webpage */}
       <h1 className="text-center ubuntu my-4">Rick & Morty <span className="text-primary">WiKi</span></h1>
 
-      <Search />
+      <Search />  
 
       <div className="container">
         <div className="row">
