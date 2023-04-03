@@ -11,14 +11,15 @@ import React, {useState, useEffect} from "react";
 import Filters from "./components/Filters/Filters";
 import Cards from "./components/Cards/Cards";
 // import Search from "./components/Search/Search"
-// import Pagination from "./components/Pagination/Pagination"
+import Pagination from "./components/Pagination/Pagination"
 // import NavBar from "./components/NavBar/NavBar"
 
 
 function App() {
   //===========This is the section fot eh main logic of the page numbers and how they will change======
   //The number inside of the useState(parentheses) is a default placeholder for the page number
-  //when the page changes the pageNumber will update to setPageNumber and render that data.
+  //When the page changes pageNumber will update to setPageNumber and render that data.
+  // Inside of the const variable is a function, pageNumber is actually the variable and 
   const [pageNumber, setPageNumber ] = useState(1);
   //This state will hold our character information
   const [fetchedData, updateFetchedData] = useState([]);
@@ -50,6 +51,7 @@ useEffect(() => {
 
   return (
     <div className="App">
+      {/* This is the styling for the banner text at the top of the webpage */}
       <h1 className="text-center ubuntu my-4">Rick & Morty <span className="text-primary">WiKi</span></h1>
 
       <div className="container">
@@ -66,7 +68,8 @@ useEffect(() => {
             </div>
           </div>
         </div>
-        </div>    
+        </div>  
+        <Pagination  />
     </div>
   );
 }

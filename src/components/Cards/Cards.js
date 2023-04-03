@@ -39,21 +39,22 @@ const Cards = ({results}) => {
 
 
                 {/* If the status of a character is "Dead" then the badge will show a read color. 
-                Else if the status of a character is "Alive" */}
+                Else if the status of a character is "Alive" 
+                Else if the status of the character is anything else return a secondary color for the badge*/}
               {(()=>{
                 if(status === "Dead"){
                     return(
                         <div className={`${styling.badge} position-absolute badge bg-danger`}>{status}</div>    
                     )
-                }
-                else if(status === "Alive"){
+                }else if(status === "Alive"){
                     return(
                         <div className={`${styling.badge} position-absolute badge bg-success`}>{status}</div>
                     )
-                }
-                else{
-                    return(<div className={`${styling.badge} position-absolute badge bg-secondary`}>{status}</div>)
+                }else{
+                    return(<div className={`${styling.badge} position-absolute badge bg-secondary`}>{status}</div>
+                    )
                  }
+                //  invoke the function with no name at the end with a set of closing parentheses. No name needed for this function called IIFE
               })()}
               
             
