@@ -20,7 +20,10 @@ function App() {
   //The number inside of the useState(parentheses) is a default placeholder for the page number.
   //When the page changes pageNumber will update to setPageNumber and render that data.
   // Inside of the const variable is a function, pageNumber is classified as a variable and setPageNumber is classified as a function.
+  // setPageNumber is used to change the pageNumber === very simple
   const [pageNumber, setPageNumber ] = useState(1);
+  
+console.log(pageNumber);
   
   //This state will hold our character information
   const [fetchedData, updateFetchedData] = useState([]);
@@ -71,7 +74,7 @@ useEffect(() => {
           </div>
         </div>
         </div>  
-        <Pagination  />
+      <Pagination  setPageNumber={ setPageNumber } />
     </div>
   );
 }
