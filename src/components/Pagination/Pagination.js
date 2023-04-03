@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-//The pagination page will style the layout and control the buttons that will function to 
+//The pagination page will style the layout and control the buttons that will function to change the page
 const Pagination = () => {
     
     let next = ()=>{}

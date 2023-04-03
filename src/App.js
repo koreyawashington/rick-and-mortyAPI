@@ -17,12 +17,14 @@ import Pagination from "./components/Pagination/Pagination"
 
 function App() {
   //===========This is the section fot eh main logic of the page numbers and how they will change======
-  //The number inside of the useState(parentheses) is a default placeholder for the page number
+  //The number inside of the useState(parentheses) is a default placeholder for the page number.
   //When the page changes pageNumber will update to setPageNumber and render that data.
-  // Inside of the const variable is a function, pageNumber is actually the variable and 
+  // Inside of the const variable is a function, pageNumber is classified as a variable and setPageNumber is classified as a function.
   const [pageNumber, setPageNumber ] = useState(1);
+  
   //This state will hold our character information
   const [fetchedData, updateFetchedData] = useState([]);
+  
   const {info, results} = fetchedData
  
   //console.log will allow me to see the results of each new page to ensure everything is running properly
