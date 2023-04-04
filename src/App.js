@@ -72,7 +72,7 @@ useEffect(() => {
       <h1 className="text-center ubuntu my-4">Rick & Morty <span className="text-primary">WiKi</span></h1>
 
       {/* here is where the setSearch function is passed into the Search component */}
-      <Search setSearch={setSearch}/>
+      <Search setPageNumber={setPageNumber} setSearch={setSearch}/>
 
       <div className="container">
         <div className="row">
@@ -89,6 +89,7 @@ useEffect(() => {
           </div>
         </div>
         </div>  
+        {/* This function is where I will be able to click on the next or previous page as well as having an option of page numbers to choose from in accordance with a range of numbers that is relevant to the current, next , and previous page numbers for the page that is running */}
       <Pagination pageNumber={pageNumber} setPageNumber={ setPageNumber } />
     </div>
   );
