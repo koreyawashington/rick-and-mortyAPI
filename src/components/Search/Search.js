@@ -12,7 +12,7 @@ const Search = ({ setSearch, setPageNumber }) => {
       {/* When there is a change in events or when something is submitted inside the search input box that will trigger the setSearch function to run. After the setSearch function is triggered it will update the search variable and the update the api which means that it will run the useEffect to get fresh new data that will be related to the what was being searched for in the input search box*/}
       <input 
       onChange={e=>{
-        // each page will start from page one as a default page. The content on the pages are going to change and some filters may have multiple pages of content that relate to the choosen filter or search so I want all of the pages to start at 1 everytime, that is why I passed in 1 for setPageNumber function === setPageNumber(1);
+        // So each page will start from page one as a default page. The content on the pages are going to change and some filters may have multiple pages of content that relate to the chosen filter or search so I want all of the pages to start at 1 every time (in relations to the pagination that will be at the bottom of each page), that is why I passed in 1 for setPageNumber function === setPageNumber(1);
         setPageNumber(1);
         setSearch(e.target.value);
       }}
