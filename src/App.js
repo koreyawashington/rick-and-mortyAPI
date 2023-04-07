@@ -8,12 +8,16 @@ import "bootstrap/dist/js/bootstrap";
 import React, {useState, useEffect} from "react";
 
 //Importing components
-import Filters from "./components/Filters/Filters";
+// import Filters from "./components/Filters/Filters";
 import Cards from "./components/Cards/Cards";
 import Search from "./components/Search/Search"
 import Pagination from "./components/Pagination/Pagination"
-// import NavBar from "./components/NavBar/NavBar"
+import NavBar from "./components/NavBar/NavBar"
 
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Episodes from "./Pages/Episodes";
+// import Location from "./Pages/Location";
+// import CardDetails from "./components/Card/CardDetails";
 
 
 function App() {
@@ -80,7 +84,7 @@ useEffect(() => {
         <div className="row">
           {/* The 'Filters' div will consist of 3 columns on the page */}
           <div className="col-3">
-            <Filters />
+            {/* <Filters /> */}
           </div>
           {/* The 'Cards' div will consists of 8 columns */}
           <div className="col-8">
